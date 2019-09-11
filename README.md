@@ -16,7 +16,7 @@ npm install less less-loader
 #### ui框架
 antd less
 全局引入 线上环境不建议使用 文件过大  建议开发环境使用
-按需引入
+按需引入 安装插件 babel-plugin-import 在webpack.config.js里找plugins 在里面添加 ['import',{'libraryName':'antd','style':true}] 本项目的less版本要与antd的less版本相同
 npm install antd
 全局引入 100
 在index.js import '/antd/dist/antd.css'  可以在官网上面找
